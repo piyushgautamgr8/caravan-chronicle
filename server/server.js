@@ -8,9 +8,9 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({
+  res.status(200).json({
     success: true,
-    message: "Caravan Chronicle API is running 🚀"
+    message: "Welcome to The Caravan Chronicle API 🚀",
   });
 });
 
